@@ -50,3 +50,23 @@ let stringToArray = function(str){
     return array
 }
 console.log(stringToArray("Hello"))
+
+
+
+//string repeat
+
+let stringRepeat = function(str, times, bool){
+    let repeatedString ="";
+    let separator = bool ? " " : "";
+    
+        for(let i = 0; i < times; i++){
+            
+        repeatedString += `${str}${separator}`; //---> with template literals
+
+        //repeatedString += str + separator; //---> without template literals
+
+        }
+    return repeatedString;
+}
+console.log(stringRepeat("Hello",5,true)) //  Hello Hello Hello Hello Hello
+console.log(stringRepeat("Hello",5,false)) //  HelloHelloHelloHelloHello
